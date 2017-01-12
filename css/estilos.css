@@ -48,6 +48,7 @@ p {
 }
 
 header {
+    border: 2px solid black;
     background-color: #A0522D;
     width: 100%;
 }
@@ -188,4 +189,16 @@ header {
     left: 38%;
     margin-top: 30px;
     padding: 0px;
+}
+
+.foot {
+    border: 2px solid black;
+    background-color: #A0522D;
+    width: 100%;
+    height: 60px;
+    color: white;
+}
+
+.pfoot {
+    padding-top: 25px;
 }
