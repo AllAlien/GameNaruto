@@ -71,3 +71,4 @@ var neji = new Lutadores ("Neji", 75, 68, 1.80, "Desconhecido", 87)
 });
 
 
+//mudança aleatoria
