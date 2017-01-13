@@ -13,7 +13,7 @@
 		?>
 	
 				<div class="circle">
-					<div class="center_batalha">
+					<div class="batalha">
 						<div class="ninja1"><img src="img/naruto.png" class="imgNinja"></div>
 								<div class="vs"><img class="imgVs"src="img/vs.png"></div>
 								<div class="ninja2"><img src="img/sasuke.png" class="imgNinja"></div>
