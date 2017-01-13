@@ -1,3 +1,6 @@
+$(document).ready(function(){ 
+
+//incio dos objetos	
 var Lutadores = function (nome, forca, velocidade, altura, cla, resistencia){
 	this.nome = nome;
 	this.forca = forca;
@@ -27,52 +30,44 @@ var sakura = new Lutadores ("sakura", 70, 50, 1.70, "Desconhecido", 60)
 var neji = new Lutadores ("Neji", 75, 68, 1.80, "Desconhecido", 87)
 
 
-//a função batalha será chamada toda vez que o gamer clicar em uma imagem, ou seja, escolher um ninja..
-//onclick
-function startwar(id){
+//eventos
+	$("img").click(function(){
+	id = $(this).attr('id')	
+
+
 	switch (id){
-		case 1: //numero ficticio propricio a mudança
+		case 'naruto': //numero ficticio propricio a mudança
+			
 			oponente = naruto;
 			break;
-		case 2: //numero ficticio propricio a mudança
+		case 'sasuke': //numero ficticio propricio a mudança
 			oponente = sasuke;
 			break;
-		case 3: //numero ficticio propricio a mudança
+		case 'sakura': //numero ficticio propricio a mudança
 			oponente = sakura;
 			break;
-		case 4: //numero ficticio propricio a mudança
+		case 'orochimaru': //numero ficticio propricio a mudança
+			oponente = orochimaru;
+			break;
+		case 'shino': //numero ficticio propricio a mudança
+			oponente = shino;
+			break;
+		case 'kakashi':
+			oponente = kakashi;
+			break;
+		case 'neji':
 			oponente = neji;
 			break;
-		case 5: //numero ficticio propricio a mudança
-			oponente = kakasi;
-			break;												
+		case 'shikamaru':
+			oponente = shikamaru;
+			break;
 	}
 
-	batalha(oponente) //chama com parametro do oponente selecionado
 
-}
-
-
-function batalha (oponente){
-
-	adversario =Math.floor(Math.random()*10)+1; //gera um numero aleatorio entre 1 e 10
-	if (adversario == 1 && oponente !== sasuke){
-		oponente = sasuke;
-	}
-	if (adversario == 2 && oponente !== naruto){
-		oponente = sasuke;
-	}
-	if (adversario == 3 && oponente !== sakura){
-		oponente = sasuke;
-	}
-	if (adversario == 4 && oponente !== neji){
-		oponente = sasuke;
-	}			
-	id.luta(id, oponente)
-
-}
+	});
 
 
 
+});
 
 
