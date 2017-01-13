@@ -5,31 +5,34 @@ body {
 
 h1 {
     text-align: center;
-    color:#fff;
+    color: #fff;
     font-weight: bold;
     font-family: Stencil;
     margin-bottom: 0px;
 }
 
 p {
-    color:#fff;
+    color: #fff;
     font-size: 20px;
     font-weight: bold;
     font-family: Verdana;
 }
 
-.circle{
+.circle {
     width: 100%;
     height: 400px;
     position: relative;
-    top:0px;
+    top: 0px;
 }
-.center{
+
+.center {
     width: 900px;
     height: 100%;
     position: relative;
-    margin:auto;
+    margin: auto;
 }
+
+
 /*
 .luta{
     width: 100px;
@@ -49,89 +52,123 @@ p {
 .ninja7{left:656px;}
 .ninja8{left:757px;}
 */
-#naruto{
-   
+
+#naruto {
     cursor: pointer;
     background: #099;
-
 }
-#naruto:hover{background:yellow;}
-#sasuke{
 
+#naruto:hover {
+    background: yellow;
+}
+
+#sasuke {
     cursor: pointer;
-    background: #099;     
+    background: #099;
+}
 
+#sasuke:hover {
+    background: yellow;
 }
-#sasuke:hover{background:yellow;}
-#sakura{
-    background: #099; 
-    cursor: pointer;    
-         
-}
-#sakura:hover{background:yellow;}
-#kakashi{
-    background: #099; 
-     cursor: pointer;
-}
-#kakashi:hover{background:yellow;}
-#orochimaru{
-    background: #099; 
-    cursor: pointer;    
-}
-#orochimaru:hover{background:yellow;}
-#shino{
-     background: #099; 
-    cursor: pointer; 
-}
-#shino:hover{background:yellow;}
-#yamato{
-    background: #099; 
-   cursor: pointer;      
-}
-#yamato:hover{background:yellow;}
-#neji{
-    background: #099; 
-    cursor: pointer;      
-}
-#neji:hover{background:yellow;}
-#shikamaru{
-    background: #099; 
-    cursor: pointer;  
-}
-#shikamaru:hover{background:yellow;}
 
+#sakura {
+    background: #099;
+    cursor: pointer;
+}
 
-.footer{
+#sakura:hover {
+    background: yellow;
+}
+
+#kakashi {
+    background: #099;
+    cursor: pointer;
+}
+
+#kakashi:hover {
+    background: yellow;
+}
+
+#orochimaru {
+    background: #099;
+    cursor: pointer;
+}
+
+#orochimaru:hover {
+    background: yellow;
+}
+
+#shino {
+    background: #099;
+    cursor: pointer;
+}
+
+#shino:hover {
+    background: yellow;
+}
+
+#yamato {
+    background: #099;
+    cursor: pointer;
+}
+
+#yamato:hover {
+    background: yellow;
+}
+
+#neji {
+    background: #099;
+    cursor: pointer;
+}
+
+#neji:hover {
+    background: yellow;
+}
+
+#shikamaru {
+    background: #099;
+    cursor: pointer;
+}
+
+#shikamaru:hover {
+    background: yellow;
+}
+
+.footer {
     width: 100%;
     height: 50px;
     text-align: center;
     font-family: Verdana;
     font-weight: bold;
     background: #787;
-    color:#fff;
-    top:400px;
+    color: #fff;
+    top: 400px;
     position: relative;
 }
-.sidebar{
+
+.sidebar {
     width: 100%;
     height: 200px;
     position: relative;
     background: #A0522D;
 }
-.logo{
+
+.logo {
     width: 900px;
     height: 100%;
     margin: auto;
     background: #A0522D;
     position: relative;
 }
-.batalha{
+
+.batalha {
     width: 800px;
-    margin:auto;
+    margin: auto;
     height: 100%;
-    
     position: relative;
 }
+
+
 /*.container {
 .imglogo{height: 100%}
 .ninja1{
@@ -349,3 +386,32 @@ header {
 .pfoot {
     padding-top: 25px;
 }*/
+
+.escolha {
+    background-image: url('../img/pant.png');
+    margin-top: -20px;
+    margin-left: -100px;
+    border: 2px solid black;
+    width: 1330px;
+    height: 500px;
+}
+
+#vs {
+    position: relative;
+    top: 400px;
+    left: 420px;
+    width: 300px;
+}
+
+#lutador1 {
+    position: absolute;
+    margin-left: 0px;
+    height: 500px;
+    height: 500px;
+}
+
+#lutador2 {
+    position: absolute;
+    margin-left: 910px;
+    height: 500px;
+}
