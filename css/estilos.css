@@ -4,15 +4,11 @@ body {
 }
 
 h1 {
-    margin-top: 0%;
-    margin-left: -80px;
-    border: 3px solid black;
-    color: yellow;
-    font-family: Stencil;
-    text-shadow: 5px 5px black;
     text-align: center;
-    width: 1100px;
-    background-color: rgba(255, 255, 143, 0.2);
+    color:#fff;
+    font-weight: bold;
+    font-family: Stencil;
+    margin-bottom: 0px;
 }
 
 p {
@@ -37,6 +33,7 @@ p {
     position: absolute;
     margin:5px;
     top:50px;
+
 }
 .ninja1{left: 50px;}
 .ninja2{left: 153px}
@@ -51,64 +48,83 @@ p {
     height: 100%;
     border:1px solid #fff;
     background: #099;
-    border-radius:10px; 
+    border-radius:10px;
+    cursor: pointer;  
 }
+#naruto:hover{height: 120%;}
 #sasuke{
     width: 100%;
     height: 100%;
     border:1px solid #fff;
     background: #099;
-    border-radius:10px;     
+    border-radius:10px;
+    cursor: pointer;
+
 }
+#sasuke:hover{height: 120%;}
 #sakura{
     width: 100%;
     height: 100%;
     border:1px solid #fff;
     background: #099;
+    cursor: pointer;    
     border-radius:10px;     
 }
+#sakura:hover{height: 120%;}
 #kakashi{
     width: 100%;
     border:1px solid #fff;
     background: #099;
     border-radius:10px; 
     height: 100%;
+     cursor: pointer;
 }
+#kakashi:hover{height: 120%;}
 #orochimaro{
     width: 100%;
     height: 100%;
      border:1px solid #fff;
     background: #099;
-    border-radius:10px;    
+    border-radius:10px;
+    cursor: pointer;    
 }
+#orochimaro:hover{height: 120%;}
 #shino{
     width: 100%;
     height: 100%;
     border:1px solid #fff;
     background: #099;
     border-radius:10px; 
+    cursor: pointer; 
 }
+#shino:hover{height: 120%;}
 #yamato{
     width: 100%;
     height: 100%;
      border:1px solid #fff;
     background: #099;
-    border-radius:10px;    
+    border-radius:10px;
+   cursor: pointer;      
 }
+#yamato:hover{height: 120%;}
 #neji{
     width: 100%;
     height: 100%;
     border:1px solid #fff;
     background: #099;
-    border-radius:10px;     
+    border-radius:10px;
+    cursor: pointer;      
 }
+#neji:hover{height: 120%;}
 #shikamaru{
     width: 100%;
     height: 100%;
     border:1px solid #fff;
     background: #099;
-    border-radius:10px; 
+    border-radius:10px;
+    cursor: pointer;  
 }
+#shikamaru:hover{height: 120%;}
 .name{margin:20%;}
 .efeito:hover{border: 1px solid #f00}
 .footer{
@@ -136,6 +152,44 @@ p {
     position: relative;
 }
 .imglogo{height: 100%}
+.center_batalha{
+    width: 800px;
+    margin:auto;
+    height: 100%;
+    
+    position: relative;
+}
+.ninja1{
+    width: 250px;
+    height: 400px;
+   
+    position: absolute;
+    left:0px;
+}
+.ninja2{
+    width: 250px;
+    height: 400px;
+
+    position: absolute;
+    left:600px;
+    top:0px;
+}
+.vs{
+    width: 250px;
+    height: 400px;
+  position: absolute;
+    left:300px;
+    top:0px;
+
+}
+.imgVs{
+    height: 70%;
+    width: 100%;
+}
+.imgNinja{
+    width: 100%;
+    height: 100%;
+}
 /*.container {
     margin-left: 500px;
     width: 900px;

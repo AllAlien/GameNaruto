@@ -2,15 +2,17 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>circle</title>
+	<title>Game Naruto</title>
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+<audio src="sound/narutosound.mp3" autoplay="autoplay" loop="lopp"></audio>
 <?php
 
 		include 'header.php';
 ?>
 	<div class="circle">
+			<h1>Escolha seu ninja</h1>
 		<div class="center">
 			<div class="luta ninja1"><p class="name">Naruto</p><img src="img/naruto.png"  id="naruto"></div>
 			<div class="luta ninja2"><p class="name">Sasuki</p><img src="img/sasuke.png"  id="sasuke"></div>
