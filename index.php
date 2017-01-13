@@ -30,7 +30,7 @@
 		<div class="row">
 			<div class="col-md-3"><p>Sasuki Uchirra</p><img id="sasuke" width="100" height="150" src="img/sasuke.png" class="img-circle"></div>
 			<div class="col-md-3"><p>Naruto Uzumaki</p><img id="naruto" width="150" height="150" src="img/naruto.png" class="img-circle"></div>
-			<div class="col-md-3"><p>Sakura-chan</p><img id="sakura" width="150" height="150" src="img/sakura.png" class="img-circle"></div>
+			<div class="col-md-3"><p>Sakura-chan</p><img id="sakura" width="150" height="100" src="img/sakura.png" class="img-circle"></div>
 			<div class="col-md-3"><p>Kakashi Hatate</p><img id="kakashi" width="150" height="150" src="img/kakashi.png" class="img-circle"></div>
 		</div>
 		<div class="row">
@@ -38,6 +38,12 @@
 			<div class="col-md-3"><p>Neji-chan</p><img id="neji" width="150" height="150" src="img/neji.png" class="img-circle"></div>
 			<div class="col-md-3"><p>Orochimaro</p><img id="orochimaru" width="150" height="150" src="img/orochimaro.png" class="img-circle"></div>
 			<div class="col-md-3"><p>Shikamaru</p><img id="shikamaru" width="150" height="150" src="img/shikamaru.png" class="img-circle"></div>
+		<img id="vs" src="img/vs.png"/>
+		</div>
+		<div class="escolha">
+			<img id="lutador1" src=""/>
+			
+			<img id="lutador2" src=""/>
 		</div>
 	</div>
 		<div class="footer">Web site game desenvollvido by Developes group</div>
