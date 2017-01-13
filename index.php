@@ -3,30 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Game Naruto</title>
-	<link rel="stylesheet" href="css/estilos.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-<audio src="sound/narutosound.mp3" autoplay="autoplay" loop="lopp"></audio>
-<?php
-
-		include 'header.php';
-?>
-	<div class="circle">
-			<h1>Escolha seu ninja</h1>
-		<div class="center">
-			<div class="luta ninja1"><p class="name">Naruto</p><img src="img/naruto.png"  id="naruto"></div>
-			<div class="luta ninja2"><p class="name">Sasuki</p><img src="img/sasuke.png"  id="sasuke"></div>
-			<div class="luta ninja3"><p class="name">Sakura</p><img src="img/sakura.png"  id="sakura"></div>
-			<div class="luta ninja4"><p class="name">Neji</p><img src="img/neji.png"  id="neji"></div>
-			<div class="luta ninja5"><p class="name">Orochimaru</p><img src="img/orochimaro.png"  id="orochimaro"></div>
-			<div class="luta ninja6"><p class="name">Kakashi</p><img src="img/kakashi.png"  id="kakashi"></div>
-			<div class="luta ninja7"><p class="name">Shino</p><img src="img/shino.png"  id="shino"></div>
-			<div class="luta ninja8"><p class="name">Shikamu</p><img src="img/shikamaru.png"  id="shikamaru"></div>
-			
+	<div class="container">
+<div class="sidebar">
+	<img height="200" src="img/logo.png">
+</div>
+		<div class="row">
+			<h1>Escolha seu ninja e entre nas batalhas</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-3"><p>Sasuki Uchirra</p><img id="sasuke" width="100" height="150" src="img/sasuke.png" class="img-circle"></div>
+			<div class="col-md-3"><p>Naruto Uzumaki</p><img id="naruto" width="150" height="150" src="img/naruto.png" class="img-circle"></div>
+			<div class="col-md-3"><p>Sakura-chan</p><img id="sakura" width="150" height="150" src="img/sakura.png" class="img-circle"></div>
+			<div class="col-md-3"><p>Kakashi Hatate</p><img id="kakashi" width="150" height="150" src="img/kakashi.png" class="img-circle"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"><p>Shino</p><img id="shino" width="150" height="150" src="img/shino.png" class="img-circle"></div>
+			<div class="col-md-3"><p>Neji-chan</p><img id="neji" width="150" height="150" src="img/neji.png" class="img-circle"></div>
+			<div class="col-md-3"><p>Orochimaro</p><img id="orochimaru" width="150" height="150" src="img/orochimaro.png" class="img-circle"></div>
+			<div class="col-md-3"><p>Shikamaru</p><img id="shikamaru" width="150" height="150" src="img/shikamaru.png" class="img-circle"></div>
 		</div>
 	</div>
-	<?php
-		include 'footer.php'; 
-	?>
+		<div class="footer">Web site game desenvollvido by Developes group</div>
 </body>
 </html>
