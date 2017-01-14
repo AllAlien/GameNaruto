@@ -1,39 +1,37 @@
     body {
-    margin: 0px;
-    background: peru;
-}
-
-h1 {
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    font-family: Stencil;
-    margin-bottom: 0px;
-}
-
-p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Verdana;
-}
-
-.circle {
-    width: 100%;
-    height: 400px;
-    position: relative;
-    top: 0px;
-}
-
-.center {
-    width: 900px;
-    height: 100%;
-    position: relative;
-    margin: auto;
-}
-
-
-/*
+        margin: 0px;
+        background: peru;
+    }
+    
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        font-family: Stencil;
+        margin-bottom: 0px;
+    }
+    
+    p {
+        color: black;
+        font-size: 21px;
+        font-weight: bold;
+        font-family: Verdana;
+    }
+    
+    .circle {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        top: 0px;
+    }
+    
+    .center {
+        width: 900px;
+        height: 100%;
+        position: relative;
+        margin: auto;
+    }
+    /*
 .luta{
     width: 100px;
     height: 100px;
@@ -52,124 +50,122 @@ p {
 .ninja7{left:656px;}
 .ninja8{left:757px;}
 */
-
-#naruto {
-    cursor: pointer;
-    background: #099;
-}
-
-#naruto:hover {
-    background: yellow;
-}
-
-#sasuke {
-    cursor: pointer;
-    background: #099;
-}
-
-#sasuke:hover {
-    background: yellow;
-}
-
-#sakura {
-    background: #099;
-    cursor: pointer;
-}
-
-#sakura:hover {
-    background: yellow;
-}
-
-#kakashi {
-    background: #099;
-    cursor: pointer;
-}
-
-#kakashi:hover {
-    background: yellow;
-}
-
-#orochimaru {
-    background: #099;
-    cursor: pointer;
-}
-
-#orochimaru:hover {
-    background: yellow;
-}
-
-#shino {
-    background: #099;
-    cursor: pointer;
-}
-
-#shino:hover {
-    background: yellow;
-}
-
-#yamato {
-    background: #099;
-    cursor: pointer;
-}
-
-#yamato:hover {
-    background: yellow;
-}
-
-#neji {
-    background: #099;
-    cursor: pointer;
-}
-
-#neji:hover {
-    background: yellow;
-}
-
-#shikamaru {
-    background: #099;
-    cursor: pointer;
-}
-
-#shikamaru:hover {
-    background: yellow;
-}
-
-.footer {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    font-family: Verdana;
-    font-weight: bold;
-    background: #787;
-    color: #fff;
-    top: 400px;
-    position: relative;
-}
-
-.sidebar {
-    width: 100%;
-    height: 200px;
-    position: relative;
-    background: #A0522D;
-}
-
-.logo {
-    width: 900px;
-    height: 100%;
-    margin: auto;
-    background: #A0522D;
-    position: relative;
-}
-
-.batalha {
-    width: 800px;
-    margin: auto;
-    height: 100%;
-    position: relative;
-}
-
-
-/*.container {
+    
+    #naruto {
+        cursor: pointer;
+        background: #099;
+    }
+    
+    #naruto:hover {
+        background: yellow;
+    }
+    
+    #sasuke {
+        cursor: pointer;
+        background: #099;
+    }
+    
+    #sasuke:hover {
+        background: yellow;
+    }
+    
+    #sakura {
+        background: #099;
+        cursor: pointer;
+    }
+    
+    #sakura:hover {
+        background: yellow;
+    }
+    
+    #kakashi {
+        background: #099;
+        cursor: pointer;
+    }
+    
+    #kakashi:hover {
+        background: yellow;
+    }
+    
+    #orochimaru {
+        background: #099;
+        cursor: pointer;
+    }
+    
+    #orochimaru:hover {
+        background: yellow;
+    }
+    
+    #shino {
+        background: #099;
+        cursor: pointer;
+    }
+    
+    #shino:hover {
+        background: yellow;
+    }
+    
+    #yamato {
+        background: #099;
+        cursor: pointer;
+    }
+    
+    #yamato:hover {
+        background: yellow;
+    }
+    
+    #neji {
+        background: #099;
+        cursor: pointer;
+    }
+    
+    #neji:hover {
+        background: yellow;
+    }
+    
+    #shikamaru {
+        background: #099;
+        cursor: pointer;
+    }
+    
+    #shikamaru:hover {
+        background: yellow;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        font-family: Verdana;
+        font-weight: bold;
+        background: #787;
+        color: #fff;
+        top: 400px;
+        position: relative;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        background: #A0522D;
+    }
+    
+    .logo {
+        width: 900px;
+        height: 100%;
+        margin: auto;
+        background: #A0522D;
+        position: relative;
+    }
+    
+    .batalha {
+        width: 800px;
+        margin: auto;
+        height: 100%;
+        position: relative;
+    }
+    /*.container {
 .imglogo{height: 100%}
 .ninja1{
     width: 250px;
@@ -386,59 +382,61 @@ header {
 .pfoot {
     padding-top: 25px;
 }*/
-
-.escolha {
-    background-image: url('../img/pant.png');
-    top:0px;
-    position: absolute;
-    margin-left: -100px;
-    border: 2px solid black;
-    width: 1330px;
-    height: 900px;
-}
-
-#vs {
-    position: relative;
-    top: 400px;
-    left: 490px;
-    width: 300px;
-}
-
-#lutador1 {
-    position: absolute;
-    margin-left: 0px;
-    height: 500px;
     
-}
-
-#lutador2 {
-    position: absolute;
-    margin-left: 910px;
-    height: 500px;
-    width: 300px;
-    left: 20px;
-}
-.descricao_lutador1{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: #fff;
-    top:500px;
-    left: 50px;
-}
-.descricao_lutador2{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: #fff;
-    top:500px;
-    left: 900px;
-}
-.statusDaLuta{
-    position: absolute;
-    width: 450px;
-    height: 50px;
-    background: #fff;
-    top:600px;
-    left:400px;   
-}
+    .escolha {
+        background-image: url('../img/pant.png');
+        top: 0px;
+        position: absolute;
+        margin-left: -100px;
+        border: 2px solid black;
+        width: 1330px;
+        height: 900px;
+    }
+    
+    #vs {
+        position: relative;
+        top: 400px;
+        left: 490px;
+        width: 300px;
+    }
+    
+    #lutador1 {
+        position: absolute;
+        margin-left: 0px;
+        height: 500px;
+    }
+    
+    #lutador2 {
+        position: absolute;
+        margin-left: 910px;
+        height: 500px;
+        width: 300px;
+        left: 20px;
+    }
+    
+    .descricao_lutador1 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: rgba(255, 171, 82, 0.3);
+        top: 500px;
+        left: 50px;
+    }
+    
+    .descricao_lutador2 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: #fff;
+        top: 500px;
+        left: 900px;
+    }
+    
+    .statusDaLuta {
+        position: absolute;
+        width: 450px;
+        height: 50px;
+        background: #fff;
+        top: 600px;
+        left: 400px;
+    }
