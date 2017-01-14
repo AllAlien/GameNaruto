@@ -248,11 +248,20 @@ $(document).ready(function() {
         $(".escolha").show() 
         setInterval(function(){  
 
-          $(".statusDaLuta").html("<p style='color:#f00'>A batalha começou...</p>")}, 2000)
+          $(".statusDaLuta").html("<p style='color:#f00'>A batalha começou...</p>")
+            $(".gopes").attr('src', 'img/chidori.png')
+            }, 2000)
+            
         setInterval(function(){
-          $(".statusDaLuta").html("<p style='color:#f00'>Que duelo incrível...</p>")}, 3000) 
+          $(".statusDaLuta").html("<p style='color:#f00'>Que duelo incrível...</p>")
+                $(".gopes").attr('src', 'img/chidori2.png')
+            }, 3000)
+           
         setInterval(function(){
-          $(".statusDaLuta").html("<p style='color:#f00'>Você não vai sair impune!</p>")}, 4000)                                                
+          $(".statusDaLuta").html("<p style='color:#f00'>Você não vai sair impune!</p>")
+                $(".gopes").attr('src', 'img/susano.png')
+            }, 4000)
+                                                          
          setInterval(function(){
           $(".statusDaLuta").html("<p style='color:#f00'>É o que veremos!</p>")}, 5000)                                                    }
 

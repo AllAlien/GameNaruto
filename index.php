@@ -45,7 +45,7 @@
 			<img id="lutador1" src=""/>
 					<img id="vs" src="img/vs.png"/>
 						<div class="descricao_lutador1"></div>
-							<div class="acontecimentos"></div>
+							<div class="acontecimentos"><img class="gopes" src=""></div>
 						<div class="statusDaLuta"></div>
 			<img id="lutador2" src=""/>
 			<div class="descricao_lutador2">!</div>
