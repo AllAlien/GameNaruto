@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     //ocultar div escolha, colocado apenas para teste
     $(".escolha").hide()
-    //incio dos objetos	
+        //incio dos objetos	
     var Lutadores = function(nome, forca, velocidade, altura, cla, resistencia) {
         this.nome = nome;
         this.forca = forca;
@@ -31,7 +31,7 @@ $(document).ready(function() {
     var orochimaru = new Lutadores("orochimaru", 75, 68, 1.80, "Desconhecido", 87)
     var shino = new Lutadores("shino", 75, 68, 1.80, "Desconhecido", 87)
     var shikamaru = new Lutadores("shikamaru", 65, 68, 1.80, "Desconhecido", 87)
-    var neji = new Lutadores("Neji", 86, 91, 1.80, "Desconhecido", 87)   
+    var neji = new Lutadores("Neji", 86, 91, 1.80, "Desconhecido", 87)
 
 
 
@@ -43,7 +43,9 @@ $(document).ready(function() {
 
     $("img").click(function() {
         id = $(this).attr('src')
-            // numero aleatorio para lutador 2
+        nome = $(this).attr("id");
+        alert(nome);
+        // numero aleatorio para lutador 2
         var l2 = Math.floor((Math.random() * 7) + 1);
         // campo do lutador 1 recebe imagem do ninja selecionado no click
         $("#lutador1").attr("src", id);
@@ -55,9 +57,149 @@ $(document).ready(function() {
         // campo do lutado2 recebe a imagem com numero aleatorio
         $("#lutador2").attr("src", lutador2[l2]);
 
-        $(".escolha").show()
 
+        $(".escolha").show()
+        if (nome == "naruto") {
+            var naruto = new Lutadores("Naruto", 79, 89, 1.80, "Usumaki", 95);
+            var n = naruto.nome;
+            var forca = naruto.forca;
+            var vel = naruto.velocidade;
+            var alt = naruto.altura;
+            var cla = naruto.cla;
+            var res = naruto.resistencia;
+
+            $(".descricao_lutador1").html("<p>Nome: " + n + "<br>" +
+                "Força: " + forca + "<br>" +
+                "Velocidade: " + vel + "<br>" +
+                "Altura: " + alt + "<br>" +
+                "Cla: " + cla + "<br>" +
+                "Resistencia: " + res + "</p>");
+
+        } else if (nome == "sasuke") {
+            var sasuke = new Lutadores("Sasuke", 82, 90, 1.82, "Uchirra", 90)
+            var n = sasuke.nome;
+            var forca = sasuke.forca;
+            var vel = sasuke.velocidade;
+            var alt = sasuke.altura;
+            var cla = sasuke.cla;
+            var res = sasuke.resistencia;
+            $(".descricao_lutador1").html("<p> Nome: " + n + "<br>" +
+                "Força: " + forca + "<br>" +
+                "Velocidade: " + vel + "<br>" +
+                "Altura: " + alt + "<br>" +
+                "Cla: " + cla + "<br>" +
+                "Resistencia: " + res + "</p>");
+
+        } else if (nome == "sakura") {
+            var sakura = new Lutadores("Sakura", 70, 50, 1.70, "Desconhecido", 60)
+            var n = sakura.nome;
+            var forca = sakura.forca;
+            var vel = sakura.velocidade;
+            var alt = sakura.altura;
+            var cla = sakura.cla;
+            var res = sakura.resistencia;
+            $(".descricao_lutador1").html("<p> Nome: " + n + "<br>" +
+                "Força: " + forca + "<br>" +
+                "Velocidade: " + vel + "<br>" +
+                "Altura: " + alt + "<br>" +
+                "Cla: " + cla + "<br>" +
+                "Resistencia: " + res + "</p>");
+
+        } else if (nome == "kakashi") {
+            var kakashi = new Lutadores("kakashi", 97, 68, 1.79, "Desconhecido", 87)
+            var n = kakashi.nome;
+            var forca = kakashi.forca;
+            var vel = kakashi.velocidade;
+            var alt = kakashi.altura;
+            var cla = kakashi.cla;
+            var res = kakashi.resistencia;
+            $(".descricao_lutador1").html("<p> Nome: " + n + "<br>" +
+                "Força: " + forca + "<br>" +
+                "Velocidade: " + vel + "<br>" +
+                "Altura: " + alt + "<br>" +
+                "Cla: " + cla + "<br>" +
+                "Resistencia: " + res + "</p>");
+
+        } else if (nome == "orochimaru") {
+            var orochimaru = new Lutadores("Orochimaru", 75, 68, 1.80, "Desconhecido", 87)
+            var n = orochimaru.nome;
+            var forca = orochimaru.forca;
+            var vel = orochimaru.velocidade;
+            var alt = orochimaru.altura;
+            var cla = orochimaru.cla;
+            var res = orochimaru.resistencia;
+            $(".descricao_lutador1").html("<p> Nome: " + n + "<br>" +
+                "Força: " + forca + "<br>" +
+                "Velocidade: " + vel + "<br>" +
+                "Altura: " + alt + "<br>" +
+                "Cla: " + cla + "<br>" +
+                "Resistencia: " + res + "</p>");
+
+        } else if (nome == "shino") {
+            var shino = new Lutadores("shino", 75, 68, 1.80, "Desconhecido", 87)
+            var n = shino.nome;
+            var forca = shino.forca;
+            var vel = shino.velocidade;
+            var alt = shino.altura;
+            var cla = shino.cla;
+            var res = shino.resistencia;
+            $(".descricao_lutador1").html("<p> Nome: " + n + "<br>" +
+                "Força: " + forca + "<br>" +
+                "Velocidade: " + vel + "<br>" +
+                "Altura: " + alt + "<br>" +
+                "Cla: " + cla + "<br>" +
+                "Resistencia: " + res + "</p>");
+
+        } else if (nome == "shikamaru") {
+            var shikamaru = new Lutadores("shikamaru", 65, 68, 1.80, "Desconhecido", 87)
+            var n = shikamaru.nome;
+            var forca = shikamaru.forca;
+            var vel = shikamaru.velocidade;
+            var alt = shikamaru.altura;
+            var cla = shikamaru.cla;
+            var res = shikamaru.resistencia;
+            $(".descricao_lutador1").html("<p> Nome: " + n + "<br>" +
+                "Força: " + forca + "<br>" +
+                "Velocidade: " + vel + "<br>" +
+                "Altura: " + alt + "<br>" +
+                "Cla: " + cla + "<br>" +
+                "Resistencia: " + res + "</p>");
+
+        } else if (nome == "neji") {
+            var neji = new Lutadores("neji", 86, 91, 1.80, "Desconhecido", 87)
+            var n = neji.nome;
+            var forca = neji.forca;
+            var vel = neji.velocidade;
+            var alt = neji.altura;
+            var cla = neji.cla;
+            var res = neji.resistencia;
+            $(".descricao_lutador1").html("<p> Nome: " + n + "<br>" +
+                "Força: " + forca + "<br>" +
+                "Velocidade: " + vel + "<br>" +
+                "Altura: " + alt + "<br>" +
+                "Cla: " + cla + "<br>" +
+                "Resistencia: " + res + "</p>");
+
+        }
+
+
+
+
+
+
+
+
+
+
+        $(".escolha").show()
     });
+
+
+
+
+
+
+
 
 
 
