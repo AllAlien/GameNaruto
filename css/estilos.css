@@ -455,3 +455,72 @@ header {
         top:0px;
         left:400px;
     }
+    .resultado {
+        
+        top: 0px;
+        position: absolute;
+        margin-left: -100px;
+        width: 1330px;
+        height: 900px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 30px;    
+    }
+    .imagemDoVencedor{
+        width: 400px;
+        height: 500px;
+        position:relative;
+        background:transparent;
+        margin:auto;
+    }
+    .imgVencedor{
+        width: 100%;
+        height: 100%;
+    }
+    .tituloVencedor{
+        background:transparent;
+        width:400px;
+        margin:auto;
+        position: relative;
+        height: 50px;
+        margin-top: 10px;
+        color:#fff;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Stencil;
+    }
+    .opcaodejogo{
+        background:transparent;
+        width:450px;
+        margin:auto;
+        position: relative;
+        height: 50px;
+        margin-top: 10px;
+        color:#fff;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Stencil;       
+    }
+    .opcaoSair{
+        width: 200px;
+        height: 40px;
+        font-size: 22px;
+        top:0px;
+        position: absolute;
+        left: 0px;
+        color:yellow;
+        background: #000;
+
+    }
+    .opcaoMesmo{
+        width: 200px;
+        height: 40px;
+        font-size: 22px;
+        top:0px;
+        position: absolute;
+        left:200px;
+        color:yellow;
+        background: #000;
+
+    }

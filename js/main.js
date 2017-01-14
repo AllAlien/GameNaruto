@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     //ocultar div escolha, colocado apenas para teste
     $(".escolha").hide()
+    $(".resultado").hide()
         //incio dos objetos	
     var Lutadores = function(nome, forca, velocidade, altura, cla, resistencia) {
         this.nome = nome;
@@ -11,17 +12,8 @@ $(document).ready(function() {
         this.cla = cla;
         this.resistencia = resistencia;
 
-        this.luta = function(lutador1, lutador2) {
-            if (lutador1 == lutador2) {
-                document.write("Essa luta não pode ocorrer entre lutadores iguais.")
-            }
 
-            if (lutador1.forca > lutador2.forca && lutador1.resistencia > lutador2.resistencia) {
-                document.write("O vencedor indubtavelmente é " + lutador1.nome);
-            } else {
-                document.write("O vencedor indubtavelmente é  " + lutador2.nome);
-            }
-        }
+        
     }
 
     var naruto = new Lutadores("Naruto", 79, 89, 1.80, "Usumaki", 95)
@@ -108,7 +100,7 @@ $(document).ready(function() {
 
         if (lutador2[l2] == id) {
             // se lutado aleatorio for igual ao ja selecionado, gera um numero novo.
-            var l2 = Math.floor((Math.random() * 7) + 1);
+             l2 = Math.floor((Math.random() * 7) + 1);
             $("#lutador2").attr("src", lutador2[l2]);
 
         }
@@ -141,8 +133,36 @@ $(document).ready(function() {
         setInterval(function() {
             $(".statusDaLuta").html("<p style='color:#f00'>É o que veremos!</p>")
         }, 5000)
+        setInterval(function(){
+            vencedor();
+        }, 6000)
     }
 
+    function vencedor (){
+        $(".escolha").hide();
+
+        numWinner = (Math.floor(Math.random()*2)+1)
+
+        if(numWinner == 1){
+            $(".imgVencedor").attr("src", id)
+        }else if(numWinner ==2){
+
+            $(".imgVencedor").attr("src", lutador2[l2])
+        }
+        /*
+        if(obj.forca > ninjaoponente.forca && obj.resistencia > ninjaoponente.resistencia){
+            $(".imgVencedor").attr("src", id)
+        }else if(ninjaoponente.forca > obj.forca && ninjaoponente.resistencia > obj.resistencia){
+            $(".imgVencedor").attr("src", lutador2[l2])
+        }else if (obj.velocidade > ninjaoponente.velocidade && obj.altura > ninjaoponente.altura){
+            $(".imgVencedor").attr("src", id)
+        }else if (ninjaoponente.velocidade > obj.velocidade && ninjaoponente.altura > obj.altura){
+            $(".imgVencedor").attr("src", lutador2[l2])
+        }
+        */
+        $(".resultado").show();
+
+    }
 
 });
 //status de luta - iniciada em 14-01-2017 as 01:57 am
