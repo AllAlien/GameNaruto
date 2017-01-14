@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    clique=false;
     //ocultar div escolha, colocado apenas para teste
     $(".escolha").hide()
     $(".resultado").hide()
@@ -34,6 +34,12 @@ $(document).ready(function() {
     ]
 
     $("img").click(function() {
+
+        if (clique == false){ 
+
+               
+            clique = true;
+
         id = $(this).attr('src')
         nome = $(this).attr("id");
         switch (nome) {
@@ -64,7 +70,7 @@ $(document).ready(function() {
         }
 
         // numero aleatorio para lutador 2
-        var l2 = Math.floor((Math.random() * 7) + 1);
+         l2 = Math.floor((Math.random() * 7) + 1);
         switch (l2) {
             case 0:
                 ninjaoponente = sasuke;
@@ -110,32 +116,35 @@ $(document).ready(function() {
             "<br>Resistencia: " + ninjaoponente.resistencia + "<br>Cla: " + ninjaoponente.cla +
             "<br>Força: " + ninjaoponente.forca + "<br>Altura: " + obj.altura + "</span>")
         status();
+
+    }//condição para a imagem ser clicada 
+
+       
     });
 
     function status() {
         $(".som").html("<audio src='sound/narutosound.mp3' autoplay='autoplay' loop='loop'>")
         $(".escolha").show()
-        setInterval(function() {
+        setTimeout(function() {
             $(".statusDaLuta").html("<p style='color:#f00'>A batalha começou...</p>")
             $(".gopes").attr('src', 'img/chidori.png')
         }, 2000)
 
-        setInterval(function() {
+        setTimeout(function() {
             $(".statusDaLuta").html("<p style='color:#f00'>Que duelo incrível...</p>")
             $(".gopes").attr('src', 'img/chidori2.png')
         }, 3000)
 
-        setInterval(function() {
+        setTimeout(function() {
             $(".statusDaLuta").html("<p style='color:#f00'>Você não vai sair impune!</p>")
             $(".gopes").attr('src', 'img/susano.png')
         }, 4000)
 
-        setInterval(function() {
+        setTimeout(function() {
             $(".statusDaLuta").html("<p style='color:#f00'>É o que veremos!</p>")
+            vencedor()
         }, 5000)
-        setInterval(function(){
-            vencedor();
-        }, 6000)
+  
     }
 
     function vencedor (){
@@ -163,6 +172,17 @@ $(document).ready(function() {
         $(".resultado").show();
 
     }
+
+    $(".opcaoSair").click(function(){
+        $(".resultado").hide();
+        clique=false;
+    })
+    $(".opcaoMesmo").click(function(){
+        $(".resultado").hide();
+        clique=false;
+        
+
+    })
 
 });
 //status de luta - iniciada em 14-01-2017 as 01:57 am
