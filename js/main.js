@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-
+    //ocultar div escolha, colocado apenas para teste
+    $(".escolha").hide()
     //incio dos objetos	
     var Lutadores = function(nome, forca, velocidade, altura, cla, resistencia) {
         this.nome = nome;
@@ -26,7 +27,12 @@ $(document).ready(function() {
     var naruto = new Lutadores("Naruto", 79, 89, 1.80, "Usumaki", 95)
     var sasuke = new Lutadores("Sasuke", 82, 90, 1.82, "Uchirra", 90)
     var sakura = new Lutadores("sakura", 70, 50, 1.70, "Desconhecido", 60)
-    var neji = new Lutadores("Neji", 75, 68, 1.80, "Desconhecido", 87)
+    var kakashi = new Lutadores("kakashi", 97, 68, 1.79, "Desconhecido", 87)
+    var orochimaru = new Lutadores("orochimaru", 75, 68, 1.80, "Desconhecido", 87)
+    var shino = new Lutadores("shino", 75, 68, 1.80, "Desconhecido", 87)
+    var shikamaru = new Lutadores("shikamaru", 65, 68, 1.80, "Desconhecido", 87)
+    var neji = new Lutadores("Neji", 86, 91, 1.80, "Desconhecido", 87)   
+
 
 
     // lista de todos os ninjas em foto
@@ -49,7 +55,7 @@ $(document).ready(function() {
         // campo do lutado2 recebe a imagem com numero aleatorio
         $("#lutador2").attr("src", lutador2[l2]);
 
-
+        $(".escolha").show()
 
     });
 

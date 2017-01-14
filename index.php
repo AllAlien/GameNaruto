@@ -20,6 +20,7 @@
 <script src="js/main.js"></script>
 </head>
 <body>
+<audio src="sound/narutosound.mp3" autoplay="autoplay" loop="loop"></audio>
 	<div class="container">
 <div class="sidebar">
 	<img height="200" src="img/logo.png">
@@ -38,10 +39,10 @@
 			<div class="col-md-3"><p>Neji-chan</p><img id="neji" width="150" height="150" src="img/neji.png" class="img-circle"></div>
 			<div class="col-md-3"><p>Orochimaro</p><img id="orochimaru" width="150" height="150" src="img/orochimaro.png" class="img-circle"></div>
 			<div class="col-md-3"><p>Shikamaru</p><img id="shikamaru" width="150" height="150" src="img/shikamaru.png" class="img-circle"></div>
-		<img id="vs" src="img/vs.png"/>
 		</div>
 		<div class="escolha">
 			<img id="lutador1" src=""/>
+					<img id="vs" src="img/vs.png"/>
 			
 			<img id="lutador2" src=""/>
 		</div>
