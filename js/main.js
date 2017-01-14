@@ -244,17 +244,17 @@ $(document).ready(function() {
     });
 
        function status (){ 
-           $(".escolha").show() 
-
+        $(".som").html("<audio src='sound/narutosound.mp3' autoplay='autoplay' loop='loop'>")
+        $(".escolha").show() 
         setInterval(function(){  
 
-          $(".statusDaLuta").html("<p>A batalha começou...</p>")}, 2000)
+          $(".statusDaLuta").html("<p style='color:#f00'>A batalha começou...</p>")}, 2000)
         setInterval(function(){
-          $(".statusDaLuta").html("<p>Que duelo incrível...</p>")}, 3000) 
+          $(".statusDaLuta").html("<p style='color:#f00'>Que duelo incrível...</p>")}, 3000) 
         setInterval(function(){
-          $(".statusDaLuta").html("<p>Você não vai sair impune!</p>")}, 4000)                                                
+          $(".statusDaLuta").html("<p style='color:#f00'>Você não vai sair impune!</p>")}, 4000)                                                
          setInterval(function(){
-          $(".statusDaLuta").html("<p>É o que veremos!</p>")}, 5000)                                                    }
+          $(".statusDaLuta").html("<p style='color:#f00'>É o que veremos!</p>")}, 5000)                                                    }
 
 
 });

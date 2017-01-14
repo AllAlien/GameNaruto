@@ -20,6 +20,7 @@
 <script src="js/main.js"></script>
 </head>
 <body>
+<div class="som"></div>
 <!--<audio src="sound/narutosound.mp3" autoplay="autoplay" loop="loop"></audio>-->
 	<div class="container">
 <div class="sidebar">
@@ -43,10 +44,11 @@
 		<div class="escolha">
 			<img id="lutador1" src=""/>
 					<img id="vs" src="img/vs.png"/>
-						<div class="descricao_lutador1">Descrição do ninja aqui..!</div>
-						<div class="statusDaLuta">Status da luta</div>
+						<div class="descricao_lutador1"></div>
+							<div class="acontecimentos"></div>
+						<div class="statusDaLuta"></div>
 			<img id="lutador2" src=""/>
-			<div class="descricao_lutador2">Descrição do ninja aqui..!</div>
+			<div class="descricao_lutador2">!</div>
 		</div>
 	</div>
 		<div class="footer">Web site game desenvollvido by Developes group</div>
