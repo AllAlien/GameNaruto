@@ -44,22 +44,76 @@ $(document).ready(function() {
     $("img").click(function() {
         id = $(this).attr('src')
         nome = $(this).attr("id");
-        alert(nome);
+        switch(nome){
+            case 'naruto':
+                   obj = naruto;
+                   break;
+            case 'sasuke':
+                   obj = sasuke;
+                   break;
+             case 'sakura':
+                   obj = sakura;
+                   break;
+             case 'kakashi':
+                    obj = kakashi;
+                    break;
+             case  'orochimaru':
+                    obj = orochimaru;
+             case 'shikamaru':
+                    obj = shikamaru;
+                    break;
+              case  'shino':
+                    obj = shino;
+                    break;
+              case 'neji':
+                    obj = neji;
+                    break;                       
+
+        }
+        
         // numero aleatorio para lutador 2
         var l2 = Math.floor((Math.random() * 7) + 1);
+        switch (l2){
+            case 0:
+                ninjaoponente = sasuke;
+                break;
+            case 1:
+                ninjaoponente = naruto;
+                break;
+            case 2:
+                ninjaoponente = sakura;
+                break;
+            case 3:
+                ninjaoponente = kakashi;
+                break;
+            case 4:
+                ninjaoponente = shino;
+                break;
+            case 5:
+                ninjaoponente = neji;
+                break;
+             case 6:
+                ninjaoponente = orochimaru;
+                break;
+            case 7:
+                ninjaoponente = shikamaru;
+                break;                                                                                                               
+        }
         // campo do lutador 1 recebe imagem do ninja selecionado no click
         $("#lutador1").attr("src", id);
+        $(".descricao_lutador1").html("<span style='color:#fff; font-size:30px'>Nome: "+obj.nome+"<br>Resistencia: "+obj.resistencia+"<br>Cla: "+obj.cla+"<br>Força: "+obj.forca+"<br>Altura: "+obj.altura+"</span>")
         if (lutador2[l2] == id) {
             // se lutado aleatorio for igual ao ja selecionado, gera um numero novo.
             var l2 = Math.floor((Math.random() * 7) + 1);
             $("#lutador2").attr("src", lutador2[l2]);
+
         }
         // campo do lutado2 recebe a imagem com numero aleatorio
         $("#lutador2").attr("src", lutador2[l2]);
-
+        $(".descricao_lutador2").html("<span style='color:#fff; font-size:30px'>Nome: "+ninjaoponente.nome+"<br>Resistencia: "+ninjaoponente.resistencia+"<br>Cla: "+ninjaoponente.cla+"<br>Força: "+ninjaoponente.forca+"<br>Altura: "+obj.altura+"</span>")
 
         $(".escolha").show()
-        if (nome == "naruto") {
+        /*if (nome == "naruto") {
             var naruto = new Lutadores("Naruto", 79, 89, 1.80, "Usumaki", 95);
             var n = naruto.nome;
             var forca = naruto.forca;
@@ -180,7 +234,7 @@ $(document).ready(function() {
                 "Cla: " + cla + "<br>" +
                 "Resistencia: " + res + "</p>");
 
-        }
+        }*/
 
 
 
