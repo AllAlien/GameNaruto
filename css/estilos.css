@@ -437,7 +437,10 @@ header {
         position: absolute;
         width: 450px;
         height: 50px;
-        background: #fff;
+        background:transparent;
+        /*background: #fff;*/
         top: 600px;
         left: 400px;
+        color:#fff;
+        font-size: 30px;
     }

@@ -108,12 +108,16 @@ $(document).ready(function() {
             $("#lutador2").attr("src", lutador2[l2]);
 
         }
+
+        //status de luta - iniciada em 14-01-2017 as 01:57 am
+   
+       
         // campo do lutado2 recebe a imagem com numero aleatorio
         $("#lutador2").attr("src", lutador2[l2]);
         $(".descricao_lutador2").html("<span style='color:#fff; font-size:30px'>Nome: "+ninjaoponente.nome+"<br>Resistencia: "+ninjaoponente.resistencia+"<br>Cla: "+ninjaoponente.cla+"<br>Força: "+ninjaoponente.forca+"<br>Altura: "+obj.altura+"</span>")
-
-        $(".escolha").show()
+        status();
         /*if (nome == "naruto") {
+        $(".escolha").show()
             var naruto = new Lutadores("Naruto", 79, 89, 1.80, "Usumaki", 95);
             var n = naruto.nome;
             var forca = naruto.forca;
@@ -237,24 +241,20 @@ $(document).ready(function() {
         }*/
 
 
-
-
-
-
-
-
-
-
-        $(".escolha").show()
     });
 
+       function status (){ 
+           $(".escolha").show() 
 
+        setInterval(function(){  
 
-
-
-
-
-
+          $(".statusDaLuta").html("<p>A batalha começou...</p>")}, 2000)
+        setInterval(function(){
+          $(".statusDaLuta").html("<p>Que duelo incrível...</p>")}, 3000) 
+        setInterval(function(){
+          $(".statusDaLuta").html("<p>Você não vai sair impune!</p>")}, 4000)                                                
+         setInterval(function(){
+          $(".statusDaLuta").html("<p>É o que veremos!</p>")}, 5000)                                                    }
 
 
 });
