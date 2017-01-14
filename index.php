@@ -43,8 +43,10 @@
 		<div class="escolha">
 			<img id="lutador1" src=""/>
 					<img id="vs" src="img/vs.png"/>
-			
+						<div class="descricao_lutador1">Descrição do ninja aqui..!</div>
+						<div class="statusDaLuta">Status da luta</div>
 			<img id="lutador2" src=""/>
+			<div class="descricao_lutador2">Descrição do ninja aqui..!</div>
 		</div>
 	</div>
 		<div class="footer">Web site game desenvollvido by Developes group</div>
