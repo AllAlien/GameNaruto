@@ -32,7 +32,7 @@
 		<div class="row">
 			<div class="col-md-3"><p>Sasuke Uchirra</p><img id="sasuke" width="100" height="150" src="img/sasuke.png" class="img-circle"></div>
 			<div class="col-md-3"><p>Naruto Uzumaki</p><img id="naruto" width="150" height="150" src="img/naruto.png" class="img-circle"></div>
-			<div class="col-md-3"><p>Sakura-chan</p><img id="sakura" width="150" height="100" src="img/sakura.png" class="img-circle"></div>
+			<div class="col-md-3"><p>Sakura-chan</p><img id="sakura" width="150" height="150" src="img/sakura.png" class="img-circle"></div>
 			<div class="col-md-3"><p>Kakashi Hatate</p><img id="kakashi" width="150" height="150" src="img/kakashi.png" class="img-circle"></div>
 		</div>
 		<div class="row">
