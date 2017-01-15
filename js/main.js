@@ -58,7 +58,7 @@ $(document).ready(function() {
             }
 
             // lista de todos os ninjas em foto
-            var lutador2 = ["img/sasuke.png", "img/naruto.png", "img/sakura.png",
+            lutador2 = ["img/sasuke.png", "img/naruto.png", "img/sakura.png",
                 "img/kakashi.png", "img/shino.png", "img/neji.png", "img/orochimaro.png",
                 "img/shikamaru.png"
             ]
@@ -115,7 +115,7 @@ $(document).ready(function() {
     });
 
     function status() {
-        $(".som").html("<audio src='sound/narutosound.mp3' autoplay='autoplay' loop='loop'>")
+        //$(".som").html("<audio src='sound/narutosound.mp3' autoplay='autoplay' loop='loop'>")
         $(".escolha").show()
         setTimeout(function() {
             $(".statusDaLuta").html("<p style='color:#f00'>A batalha começou...</p>")
@@ -141,12 +141,11 @@ $(document).ready(function() {
 
     function vencedor() {
         $(".escolha").hide();
-        numWinner = (Math.floor(Math.random() * 2) + 1)
+        numWinner = (Math.floor(Math.random() * 9) + 1)
 
-        if (numWinner == 1) {
+        if (numWinner % 2 == 0) {
             $(".imgVencedor").attr("src", id)
-        } else if (numWinner == 2) {
-
+        } else if (numWinner % 2 != 0) {
             $(".imgVencedor").attr("src", lutador2[l2])
         }
         /*
@@ -164,11 +163,6 @@ $(document).ready(function() {
 
     } // Ao escolher lutar novamente com o mesmo ninja , a funcao again escolhera um novo oponente para a luta;
     function again() {
-        // lista de todos os ninjas em foto
-        var lutador2 = ["img/sasuke.png", "img/naruto.png", "img/sakura.png",
-            "img/kakashi.png", "img/shino.png", "img/neji.png", "img/orochimaro.png",
-            "img/shikamaru.png"
-        ]
 
         // numero aleatorio para lutador 2
         l2 = Math.floor((Math.random() * 7) + 1);
