@@ -148,17 +148,7 @@ $(document).ready(function() {
         } else if (numWinner % 2 != 0) {
             $(".imgVencedor").attr("src", lutador2[l2])
         }
-        /*
-        if(obj.forca > ninjaoponente.forca && obj.resistencia > ninjaoponente.resistencia){
-            $(".imgVencedor").attr("src", id)
-        }else if(ninjaoponente.forca > obj.forca && ninjaoponente.resistencia > obj.resistencia){
-            $(".imgVencedor").attr("src", lutador2[l2])
-        }else if (obj.velocidade > ninjaoponente.velocidade && obj.altura > ninjaoponente.altura){
-            $(".imgVencedor").attr("src", id)
-        }else if (ninjaoponente.velocidade > obj.velocidade && ninjaoponente.altura > obj.altura){
-            $(".imgVencedor").attr("src", lutador2[l2])
-        }
-        */
+   
         $(".resultado").show();
 
     } // Ao escolher lutar novamente com o mesmo ninja , a funcao again escolhera um novo oponente para a luta;
@@ -219,37 +209,3 @@ $(document).ready(function() {
     })
 
 });
-
-//status de luta - iniciada em 14-01-2017 as 01:57 am
-
-// versao antiga exemplo instancia de classes.
-/*if (nome == "naruto") {
-$(".escolha").show()
-    var naruto = new Lutadores("Naruto", 79, 89, 1.80, "Usumaki", 95);
-    var n = naruto.nome;
-    var forca = naruto.forca;
-    var vel = naruto.velocidade;
-    var alt = naruto.altura;
-    var cla = naruto.cla;
-    var res = naruto.resistencia;
-    $(".descricao_lutador1").html("<p>Nome: " + n + "<br>" +
-        "Força: " + forca + "<br>" +
-        "Velocidade: " + vel + "<br>" +
-        "Altura: " + alt + "<br>" +
-        "Cla: " + cla + "<br>" +
-        "Resistencia: " + res + "</p>");
-
-} else if (nome == "sasuke") {
-    var sasuke = new Lutadores("Sasuke", 82, 90, 1.82, "Uchirra", 90)
-    var n = sasuke.nome;
-    var forca = sasuke.forca;
-    var vel = sasuke.velocidade;
-    var alt = sasuke.altura;
-    var cla = sasuke.cla;
-    var res = sasuke.resistencia;
-    $(".descricao_lutador1").html("<p> Nome: " + n + "<br>" +
-        "Força: " + forca + "<br>" +
-        "Velocidade: " + vel + "<br>" +
-        "Altura: " + alt + "<br>" +
-        "Cla: " + cla + "<br>" +
-        "Resistencia: " + res + "</p>");*/

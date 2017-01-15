@@ -56,6 +56,6 @@
 			<div class="opcaodejogo"><button class="opcaoSair">Outro ninja</button><button class="opcaoMesmo">Mesmo ninja</button></div>
 		</div>
 	</div>
-		<div class="footer">Web site game desenvollvido by Developes group</div>
+		<div class="footer">Web site game desenvollvido by Developers group</div>
 </body>
 </html>
