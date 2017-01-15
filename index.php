@@ -50,6 +50,11 @@
 			<img id="lutador2" src=""/>
 			<div class="descricao_lutador2">!</div>
 		</div>
+		<div class="resultado">
+			<div class="imagemDoVencedor"><img src="" class="imgVencedor"></div>
+			<div class="tituloVencedor">Ninja vencedor!!</div>
+			<div class="opcaodejogo"><button class="opcaoSair">Outro ninja</button><button class="opcaoMesmo">Mesmo ninja</button></div>
+		</div>
 	</div>
 		<div class="footer">Web site game desenvollvido by Developes group</div>
 </body>
